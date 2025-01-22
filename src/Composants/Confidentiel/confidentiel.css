@@ -1,0 +1,52 @@
+
+.container3 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+}
+
+/* fleurs */
+.corner-flower {
+    position: absolute;
+    width: 70px; 
+    height: 70px;
+    animation: rotate 10s linear infinite;
+}
+
+.flower-top-right {
+    top: -25px;
+    right: -25px;
+}
+
+.flower-bottom-left {
+    top: -25px;
+    left: -25px;
+}
+
+/* anim fleurs */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Mentions */
+.section-mentions {
+    font-size: 25px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 40px;
+    width: 400px;
+    padding-top: 30px;
+    margin-left: 500px;
+    position: relative;
+    height: 60px;
+    bottom: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}

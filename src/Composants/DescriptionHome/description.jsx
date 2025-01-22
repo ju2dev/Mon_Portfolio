@@ -1,0 +1,115 @@
+import React from 'react';
+import './description.css';
+import FleurBleu from '../../assets/img/fleur-bleu.png';
+import FleurRose from '../../assets/img/fleur-rose.png';
+import FleurJaune from '../../assets/img/fleur-jaune.png';
+import FleurFoncé from '../../assets/img/fleur-rose-foncé.png';
+import GitHub from '../../assets/img/github.svg';
+import Telechargement from '../../assets/img/telechargement.svg';
+import SASS from '../../assets/img/SASS.png';
+import HTML from '../../assets/img/html.png';
+import CSS from '../../assets/img/css.png';
+import REACT from '../../assets/img/react.png';
+import JS from '../../assets/img/js.png';
+import Linkedin from '../../assets/img/Linkedin.png';
+import Instagram from '../../assets/img/instagram.png';
+
+const description = () => {
+  return (
+    <section id="accueil" className="main-container">
+      <img 
+        src={FleurBleu} 
+        alt="fleur décorative" 
+        className="corner-flower flower-top-left" 
+      />
+      <img 
+        src={FleurRose} 
+        alt="fleur décorative" 
+        className="corner-flower flower-bottom-right" 
+      />
+      
+      <div className="text1">
+        <h1>HEY !</h1>
+      </div>
+      
+      <div className="text2">
+        <h2>MOI C'EST JU.</h2>
+      </div>
+      
+      <p className="role">Développeuse Web</p>
+      
+      <div className="buttons">
+        <a href="https://github.com/ju2dev" className="btn github">
+          <img src={GitHub} alt="GitHub" width="20" height="20" />
+          {' '}Github
+        </a>
+        <a href="cv.pdf" download className="btn cv">
+          <img 
+            src={Telechargement} 
+            alt="Téléchargement CV" 
+            width="20" 
+            height="20" 
+          />
+          {' '}CV
+        </a>
+        <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer" className="btn linkedin">
+    <img 
+      src={Linkedin} 
+      alt="LinkedIn" 
+      width="20" 
+      height="20" 
+    />
+    {' '}LinkedIn
+  </a>
+
+  {/* Bouton Instagram */}
+  <a href="https://www.instagram.com/ton-profil" target="_blank" rel="noopener noreferrer" className="btn instagram">
+    <img 
+      src={Instagram} 
+      alt="Instagram" 
+      width="20" 
+      height="20" 
+    />
+    {' '}Instagram
+  </a>
+      </div>
+      
+      <div className="container1">
+        <img 
+          src={FleurJaune} 
+          alt="fleur décorative" 
+          className="corner-flower flower-top-right" 
+        />
+        <img 
+          src={FleurFoncé}
+          alt="fleur décorative" 
+          className="corner-flower flower-bottom-left" 
+        />
+        
+        <div className="description">
+          <p>
+            Bienvenue sur mon portfolio ! <p> En tant que développeuse freelance, 
+            je me spécialise dans la création de sites web. </p>
+            <p>Mon objectif est 
+            de proposer des solutions sur mesure, optimisées pour la performance 
+            et l'expérience utilisateur.</p>
+          </p>
+          <p>J'ai 22 ans et toutes mes dents !</p>
+          
+          <div className="competences">
+            <p>Formé par Openclassroom, j'ai des compétences en :</p>
+            <div className="competence-icons">
+              <img src={SASS} alt="SASS" className="competence-icon" />
+              <img src={REACT} alt="React" className="competence-icon" />
+              <img src={JS} alt="JavaScript" className="competence-icon" />
+              <img src={HTML} alt="HTML" className="competence-icon" />
+              <img src={CSS} alt="CSS" className="competence-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default description;

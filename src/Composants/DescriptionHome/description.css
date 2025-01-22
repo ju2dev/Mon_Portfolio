@@ -1,0 +1,248 @@
+
+/* DESCRIPTION */
+.container1 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 40%;
+    height: 100%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 600px;
+    left: 600px;
+    border: 1px solid black;
+  }
+  
+  .competences {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .competences p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .competence-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 5.5rem;
+    padding-top: 60px;
+    animation: fadeIn 1.5s ease-in-out;
+    padding-bottom: 30px;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* fleurs */
+  .corner-flower {
+    position: absolute;
+    width: 70px; 
+    height: 70px;
+    animation: rotate 7s linear infinite;
+  }
+  
+  /* Positions des fleurs */
+  .flower-top-left {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .flower-top-right {
+    top: -25px;
+    right: -25px;
+  }
+  
+  .flower-bottom-left {
+    bottom: -25px;
+    left: -25px;
+  }
+  
+  .flower-bottom-right {
+    bottom: -25px;
+    right: -25px;
+  }
+  
+  /* anim fleurs */
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  /* Textes */
+  .text1 {
+    padding-left: 40px;
+  }
+  
+  .text2 {
+    padding-left: 80px;
+  }
+  
+  .role {
+    font-size: 2rem;
+    margin: 10px 0 20px;
+    padding-left: 250px;
+  }
+  
+  /* Boutons */
+  .buttons {
+    padding-left: 50px;
+  }
+  
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  /* Conteneur des boutons */
+  .button-container {
+    display: flex;
+    gap: 10px;  /* Espacement entre les boutons */
+    justify-content: center;  /* Centre les boutons horizontalement */
+    align-items: center;  /* Aligne verticalement les boutons */
+  }
+  
+  /* Bouton GitHub */
+  .github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 107px;
+    height: 34px;
+    background-color: #F5B8B8;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 10px; 
+    font-weight: bold;
+  }
+  
+  .github img {
+    margin-right: 8px;
+    width: 18px;
+    height: auto;
+  }
+  
+  /* Bouton CV */
+  .cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 107px;
+    height: 34px;
+    background-color: #D1C0FA;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    left: 250px;
+    bottom: 50px;
+    border-radius: 10px; 
+    font-weight: bold;
+  }
+  
+  .cv img {
+    margin-right: 8px;
+    width: 18px;
+    height: auto;
+  }
+
+  .instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 107px;
+    height: 34px;
+    background-color: #C0E2FA;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    left: 250px;
+    border-radius: 10px; 
+    position: relative;
+    bottom: 70px;
+    font-weight: bold;
+  }
+
+  .linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 107px;
+    height: 34px;
+    background-color: #FDF0C7;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 10px; 
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .linkedin img {
+    margin-right: 8px;
+    width: 18px;
+    height: auto;
+  }
+
+  .instagram img {
+    margin-right: 8px;
+    width: 18px;
+    height: auto;
+  }
+
+  /* Effet au survol */
+  .btn:hover {
+    opacity: 0.8;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  

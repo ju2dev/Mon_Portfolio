@@ -1,0 +1,60 @@
+
+
+.cloud-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 50px;
+    position: relative;
+    height: 370px;
+}
+
+.cloud-container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: white;
+    border-radius: 70px;
+    z-index: -1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #F5B8B8;
+    color: white;
+    padding: 15px 30px;  /* Augmenter la taille du bouton */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;  /* Ajouter un peu d'espace autour du bouton */
+    font-size: 1.2rem;   /* Augmenter la taille du texte */
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}

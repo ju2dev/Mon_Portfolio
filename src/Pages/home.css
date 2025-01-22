@@ -1,0 +1,20 @@
+/* Section principale */
+.main-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px 50px 50px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    padding-bottom: 120px;
+    position: relative;
+  }
+
+  /* Styles généraux */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2D8D8;
+    color: #333;
+    padding-top: 60px; 
+  }
