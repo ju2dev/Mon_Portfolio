@@ -2,13 +2,6 @@ import React, { useEffect } from 'react';
 import './confidentiel.css';
 
 const PrivacyPolicy = () => {
-  useEffect(() => {
-    document.body.style.backgroundColor = '#C0E2FA'; // Couleur pastel pour Politique
-    return () => {
-      document.body.style.backgroundColor = 'white'; // Rétablir la couleur par défaut
-    };
-  }, []);
-
   return (
     <div className="privacy-policy">
       <h2 className="section-mentions">Politique de confidentialité</h2>

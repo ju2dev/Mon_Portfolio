@@ -9,9 +9,9 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Ju - Développeuse Web. Tous droits réservés.</p>
         <nav>
           <ul>
-            <li><Link to="/Mention">Mentions légales</Link></li>
-            <li><Link to="/Politique">Politique de confidentialité</Link></li>
-            <li><Link to="/Contact">Contact</Link></li>
+            <li><Link to="/mention">Mentions légales</Link></li>
+            <li><Link to="/politique">Politique de confidentialité</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
       </div>
