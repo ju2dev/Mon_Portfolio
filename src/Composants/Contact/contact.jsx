@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
-import './contact.css'; 
+import React, { useState, useEffect } from 'react';
+import './contact.css';
 
 const ContactForm = () => {
   const [messageStatus, setMessageStatus] = useState('');
+
+  useEffect(() => {
+    document.body.style.backgroundColor = '#C0E2FA'; // Couleur pastel pour Contact
+    return () => {
+      document.body.style.backgroundColor = 'white'; // Réinitialise la couleur de fond
+    };
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();

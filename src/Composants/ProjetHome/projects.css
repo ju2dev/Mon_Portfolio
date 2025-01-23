@@ -150,3 +150,40 @@
     top: 100px;
     width: 50px;
   }
+
+/* Responsive Design */
+@media screen and (max-width: 1250px) {
+  
+    .projects-section-container {
+        position: relative;
+        top: 380px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .projects-section-container {
+        position: relative;
+        top: 460px;
+    }
+  }
+
+  @media screen and (max-width: 603px) {
+    .projects-section-container {
+        position: relative;
+        top: 650px;
+    }
+  }
+
+  @media screen and (max-width: 405px) {
+    .projects-section-container {
+        position: relative;
+        top: 800px;
+    }
+  }
+
+  @media screen and (max-width: 359px) {
+    .projects-section-container {
+        position: relative;
+        top: 900px;
+    }
+  }

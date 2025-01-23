@@ -1,100 +1,62 @@
-
-/* DESCRIPTION */
+/* Conteneur principal */
 .container1 {
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 30px;
-    width: 40%;
-    height: 100%;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    bottom: 600px;
-    left: 600px;
-    border: 1px solid black;
-  }
-  
-  .competences {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .competences p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .competence-icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-  }
-  
-  h1, h2 {
-    margin: 0;
-    padding-bottom: 30px;
-  }
-  
-  h1 {
-    font-size: 5.5rem;
-    padding-top: 60px;
-    animation: fadeIn 1.5s ease-in-out;
-    padding-bottom: 30px;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-10px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* fleurs */
-  .corner-flower {
-    position: absolute;
-    width: 70px; 
-    height: 70px;
-    animation: rotate 7s linear infinite;
-  }
-  
-  /* Positions des fleurs */
-  .flower-top-left {
-    top: -25px;
-    left: -25px;
-  }
-  
-  .flower-top-right {
-    top: -25px;
-    right: -25px;
-  }
-  
-  .flower-bottom-left {
-    bottom: -25px;
-    left: -25px;
-  }
-  
-  .flower-bottom-right {
-    bottom: -25px;
-    right: -25px;
-  }
-  
-  /* anim fleurs */
-  @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-  }
-  
-  h2 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .description {
-    font-size: 20px;
-    text-align: center;
-  }
-  
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 50%; 
+  height: 90%;
+  box-shadow: 9px 1px 50px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 520px;
+  left: 500px;
+}
+
+.competences {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.competences p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.competence-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+h1, h2 {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-size: 5.5rem;
+  padding-top: 60px;
+  animation: fadeIn 1.5s ease-in-out;
+  padding-bottom: 30px;
+}
+
+
+/* Animation de fade-in */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
   /* Textes */
   .text1 {
     padding-left: 40px;
@@ -107,142 +69,248 @@
   .role {
     font-size: 2rem;
     margin: 10px 0 20px;
-    padding-left: 250px;
+    padding-left: 150px;
   }
   
-  /* Boutons */
-  .buttons {
-    padding-left: 50px;
+/* Conteneur des boutons */
+.buttons {
+  display: flex; /* Permet d'aligner les boutons horizontalement */
+  flex-wrap: wrap; /* Permet le retour à la ligne pour les petits écrans */
+  justify-content: center; /* Centre les boutons */
+  gap: 10px; /* Ajoute un espace entre les boutons */
+  padding: 20px; /* Espacement autour des boutons */
+}
+
+/* Boutons génériques */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 14px; /* Taille du texte */
+  width: auto; /* Permet au bouton de s'adapter à son contenu */
+  min-width: 120px; /* Largeur minimale pour une meilleure lisibilité */
+  height: 40px; /* Hauteur cohérente pour tous les boutons */
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+/* Bouton GitHub */
+.github {
+  background-color: #F5B8B8;
+  color: black;
+  font-weight: bold;
+}
+
+.github img {
+  margin-right: 8px;
+  width: 18px;
+  height: auto;
+}
+
+/* Bouton CV */
+.cv {
+  background-color: #D1C0FA;
+  color: black;
+  font-weight: bold;
+}
+
+.cv img {
+  margin-right: 8px;
+  width: 18px;
+  height: auto;
+}
+
+/* Bouton Instagram */
+.instagram {
+  background-color: #C0E2FA;
+  color: black;
+  font-weight: bold;
+}
+
+.instagram img {
+  margin-right: 8px;
+  width: 18px;
+  height: auto;
+}
+
+/* Bouton LinkedIn */
+.linkedin {
+  background-color: #FDF0C7;
+  color: black;
+  font-weight: bold;
+}
+
+.linkedin img {
+  margin-right: 8px;
+  width: 18px;
+  height: auto;
+}
+
+/* Animation fleurs */
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
   }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Fleurs décoratives */
+.corner-flower {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  animation: rotate 7s linear infinite;
+}
+
+/* Positions des fleurs */
+.flower-top-left {
+  top: -25px;
+  left: -25px;
+}
+
+.flower-top-right {
+  top: -25px;
+  right: -25px;
+}
+
+.flower-bottom-left {
+  bottom: -25px;
+  left: -25px;
+}
+
+.flower-bottom-right {
+  bottom: -25px;
+  right: -25px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1250px) {
   
+  .container1 {
+    width: 80%; 
+    height: 120%;
+    position: relative;
+    bottom: 230px;
+    left: 50px;
+  }
+
+    /* Textes */
+    .text1 {
+      padding-left: 40px;
+    }
+    
+    .text2 {
+      padding-left: 40px;
+    }
+    
+    .role {
+      font-size: 2rem;
+      margin: 10px 0 20px;
+      padding-left: 50px;
+    }
+
+    h1, h2 {
+      padding-bottom: 0px;
+    }
+    
+    h1 {
+      font-size: 5.5rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+/* Boutons */
+.buttons {
+  flex-direction: column; /* Empile les boutons verticalement */
+  align-items: center; /* Centre les boutons */
+}
+
+.btn {
+  width: 40%; /* Largeur relative */
+  height: 30%;
+}
+
+/* Positionnement des boutons */
+.cv, .instagram, .github, .linkedin {
+position: relative;
+bottom: 270px;
+left: 200px;
+}
+}
+
+@media screen and (max-width: 860px) {
+
   .btn {
-    display: inline-block;
-    text-decoration: none;
-    margin: 5px;
-    padding: 5px 30px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+    width: 80%; 
+    max-width: 150px;  
+    margin: 5px auto; 
   }
-  
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 730px) {
+  .container1 {
+    width: 80%; 
+    height: 140%;
   }
-  /* Conteneur des boutons */
-  .button-container {
-    display: flex;
-    gap: 10px;  /* Espacement entre les boutons */
-    justify-content: center;  /* Centre les boutons horizontalement */
-    align-items: center;  /* Aligne verticalement les boutons */
-  }
-  
-  /* Bouton GitHub */
-  .github {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 107px;
-    height: 34px;
-    background-color: #F5B8B8;
-    border-radius: 5px;
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 10px; 
-    font-weight: bold;
-  }
-  
-  .github img {
-    margin-right: 8px;
-    width: 18px;
-    height: auto;
-  }
-  
-  /* Bouton CV */
-  .cv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 107px;
-    height: 34px;
-    background-color: #D1C0FA;
-    border-radius: 5px;
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    position: relative;
-    left: 250px;
-    bottom: 50px;
-    border-radius: 10px; 
-    font-weight: bold;
-  }
-  
-  .cv img {
-    margin-right: 8px;
-    width: 18px;
-    height: auto;
+}
+
+@media screen and (max-width: 710px) {
+  .buttons {
+    flex-direction: row;
   }
 
-  .instagram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 107px;
-    height: 34px;
-    background-color: #C0E2FA;
-    border-radius: 5px;
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    position: relative;
-    left: 250px;
-    border-radius: 10px; 
-    position: relative;
-    bottom: 70px;
-    font-weight: bold;
+  .cv, .instagram, .github, .linkedin {
+    bottom: 30px;
+    left: 10px;
+    }
+
+    .container1 {
+      height: 100%;
+      bottom: 0px;
+      left: 30px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+  .container1 {
+    height: 120%;
+    top: 30px;
+    left: 10px;
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  .container1 {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .container1 {
+    height: 110%;
+    left: 0px;
   }
 
-  .linkedin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 107px;
-    height: 34px;
-    background-color: #FDF0C7;
-    border-radius: 5px;
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 10px; 
-    position: relative;
-    bottom: 20px;
-    font-weight: bold;
+  .role {
+    padding-left: 30px;
   }
-  
-  .linkedin img {
-    margin-right: 8px;
-    width: 18px;
-    height: auto;
-  }
+}
 
-  .instagram img {
-    margin-right: 8px;
-    width: 18px;
-    height: auto;
+@media screen and (max-width: 359px) {
+  .container1 {
+    height: 130%;
   }
+}
 
-  /* Effet au survol */
-  .btn:hover {
-    opacity: 0.8;
-    transform: translateY(-3px);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn:hover {
-    opacity: 0.8;
-  }
-  

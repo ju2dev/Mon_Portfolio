@@ -32,4 +32,45 @@
     color: #e91e63; /* Couleur au survol */
   }
   
+  /* Responsive Design */
+@media screen and (max-width: 1250px) {
   
+  .footer {
+      position: relative;
+      top: 380px;
+  }
+
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    position: relative;
+    top: 480px;
+}
+}
+
+@media screen and (max-width: 603px) {
+  .footer {
+    position: relative;
+    top: 520px;
+   padding-bottom: 30px;
+}
+
+.footer-content li {
+  display: block;
+}
+}
+
+@media screen and (max-width: 398px) {
+  .footer {
+    position: relative;
+    top: 800px;
+}
+}
+
+@media screen and (max-width: 359px) {
+  .footer {
+    position: relative;
+    top: 900px;
+}
+}

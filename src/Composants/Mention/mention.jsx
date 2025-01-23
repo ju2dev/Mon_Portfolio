@@ -1,7 +1,14 @@
-import React from 'react';
-import './mention.css'; 
+import React, { useEffect } from 'react'; // Ajout de l'import pour useEffect
+import './mention.css';
 
 const MentionsLegales = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = '#C0E2FA'; // Couleur pastel pour Mention
+    return () => {
+      document.body.style.backgroundColor = 'white'; // Rétablir la couleur par défaut lors du départ de la page
+    };
+  }, []);
+
   return (
     <div>
       <h4 className="section-mentions">Mentions Légales</h4>
