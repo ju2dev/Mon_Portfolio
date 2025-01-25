@@ -1,5 +1,6 @@
 import React from 'react';
 import './description.css';
+
 import FleurBleu from '../../assets/img/fleur-bleu.png';
 import FleurRose from '../../assets/img/fleur-rose.png';
 import FleurJaune from '../../assets/img/fleur-jaune.png';
@@ -27,6 +28,16 @@ const description = () => {
         alt="fleur décorative" 
         className="corner-flower flower-bottom-right" 
       />
+      <img 
+          src={FleurJaune} 
+          alt="fleur décorative" 
+          className="corner-flower flower-top-right" 
+        />
+        <img 
+          src={FleurFoncé}
+          alt="fleur décorative" 
+          className="corner-flower flower-left" 
+        />
       
       <div className="text1">
         <h1>HEY !</h1>
@@ -75,27 +86,13 @@ const description = () => {
       </div>
       
       <div className="container1">
-        <img 
-          src={FleurJaune} 
-          alt="fleur décorative" 
-          className="corner-flower flower-top-right" 
-        />
-        <img 
-          src={FleurFoncé}
-          alt="fleur décorative" 
-          className="corner-flower flower-bottom-left" 
-        />
         
         <div className="description">
-          <p>
-            Bienvenue sur mon portfolio ! <p> En tant que développeuse freelance, 
-            je me spécialise dans la création de sites web. </p>
-            <p>Mon objectif est 
-            de proposer des solutions sur mesure, optimisées pour la performance 
-            et l'expérience utilisateur.</p>
-          </p>
-          <p>J'ai 22 ans et toutes mes dents !</p>
-          
+          <p className='Bien'>Bienvenue sur mon portfolio !</p>
+          <p className='dent'>J'ai 22 ans et toutes mes dents !</p> 
+          <p className='Dev'> En tant que développeuse freelance, je me spécialise dans la création de sites web. </p>
+          <p className='obj'>Mon objectif est de proposer des solutions sur mesure, optimisées pour la performance et l'expérience utilisateur.</p>
+           
           <div className="competences">
             <p>Formé par Openclassroom, j'ai des compétences en :</p>
             <div className="competence-icons">

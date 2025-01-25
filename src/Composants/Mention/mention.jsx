@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react'; // Ajout de l'import pour useEffect
+import React, { useEffect } from 'react'; 
+import FleurJaune from '../../assets/img/fleur-jaune.png';
+import FleurFoncé from '../../assets/img/fleur-rose-foncé.png';
 import './mention.css';
 
 const MentionsLegales = () => {
   useEffect(() => {
-    document.body.style.backgroundColor = '#C0E2FA'; // Couleur pastel pour Mention
+    document.body.style.backgroundColor = '#C0E2FA'; 
     return () => {
-      document.body.style.backgroundColor = 'white'; // Rétablir la couleur par défaut lors du départ de la page
+      document.body.style.backgroundColor = 'white';
     };
   }, []);
 
@@ -14,12 +16,12 @@ const MentionsLegales = () => {
       <h4 className="section-mentions">Mentions Légales</h4>
       <div className="container">
         <img
-          src="img/fleur-jaune.png"
+          src={FleurJaune} 
           alt="fleur décorative"
           className="corner-flower flower-top-right"
         />
         <img
-          src="img/fleur-rose-foncé.png"
+          src={FleurFoncé}
           alt="fleur décorative"
           className="corner-flower flower-bottom-left"
         />

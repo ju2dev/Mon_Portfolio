@@ -1,15 +1,15 @@
 
 /* FOOTER */
 .footer {
-    border-radius: 30px; /* Coins arrondis */
+    border-radius: 30px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour le style */
-    background-color: #ffffff; /* Couleur de fond */
-    color: #333; /* Couleur du texte */
+    background-color: #ffffff;
+    color: #333; 
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
-    margin: 20px auto; /* Centre horizontalement */
-    width: 80%; /* Ajuste la largeur */
+    margin: 20px auto; 
+    width: 80%; 
   }
   
   .footer-content ul {
@@ -32,45 +32,3 @@
     color: #e91e63; /* Couleur au survol */
   }
   
-  /* Responsive Design */
-@media screen and (max-width: 1250px) {
-  
-  .footer {
-      position: relative;
-      top: 380px;
-  }
-
-}
-
-@media screen and (max-width: 730px) {
-  .footer {
-    position: relative;
-    top: 480px;
-}
-}
-
-@media screen and (max-width: 603px) {
-  .footer {
-    position: relative;
-    top: 520px;
-   padding-bottom: 30px;
-}
-
-.footer-content li {
-  display: block;
-}
-}
-
-@media screen and (max-width: 398px) {
-  .footer {
-    position: relative;
-    top: 800px;
-}
-}
-
-@media screen and (max-width: 359px) {
-  .footer {
-    position: relative;
-    top: 900px;
-}
-}

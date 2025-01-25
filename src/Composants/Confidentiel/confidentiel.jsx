@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react';
+
+import FleurJaune from '../../assets/img/fleur-jaune.png';
+import FleurFoncé from '../../assets/img/fleur-rose-foncé.png';
+
 import './confidentiel.css';
 
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy">
-      <h2 className="section-mentions">Politique de confidentialité</h2>
+      <h2 className="section-mentions1">Politique de confidentialité</h2>
       <div className="container3">
-        <img src="img/fleur-jaune.png" alt="fleur décorative" className="corner-flower flower-top-right" />
-        <img src="img/fleur-rose-foncé.png" alt="fleur décorative" className="corner-flower flower-bottom-left" />
+        <img src={FleurJaune} alt="fleur décorative" className="corner-flower flower-top-right" />
+        <img src={FleurFoncé} alt="fleur décorative" className="corner-flower flower-bottom-left" />
 
         <p>La présente politique de confidentialité s’applique au site Internet suivant : SITE (ci-après le « Site Internet »).</p>
         <p>Elle a pour but d’exposer aux utilisateurs du Site Internet :</p>

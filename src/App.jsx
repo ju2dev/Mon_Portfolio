@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './Pages/Home';
@@ -17,25 +16,25 @@ const App = () => {
   
     switch (location.pathname) {
       case '/':
-        document.body.style.backgroundColor = '#F5B8B8'; // Accueil
+        document.body.style.backgroundColor = '#FBC4CB'; 
         break;
       case '/propos':
-        document.body.style.backgroundColor = '#D1C0FA'; // À propos
+        document.body.style.backgroundColor = '#EADCF9'; 
         break;
       case '/passions':
-        document.body.style.backgroundColor = '#C0E2FA'; // Passions
+        document.body.style.backgroundColor = '#C0E2FA'; 
         break;
       case '/contact':
-        document.body.style.backgroundColor = '#FDF0C7'; // Contact
+        document.body.style.backgroundColor = '#FDF0C7'; 
         break;
       case '/mention':
-        document.body.style.backgroundColor = '#E8D7F2'; // Mentions légales
+        document.body.style.backgroundColor = '#A8D5BA'; 
         break;
       case '/politique':
-        document.body.style.backgroundColor = '#C0F7FA'; // Politique
+        document.body.style.backgroundColor = '#F9D5A7'; 
         break;
       default:
-        document.body.style.backgroundColor = 'white'; // Autres pages
+        document.body.style.backgroundColor = 'white';
     }
   }, [location]);
 

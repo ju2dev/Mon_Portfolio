@@ -37,16 +37,14 @@
 }
 
 /* Mentions */
-.section-mentions {
-    font-size: 25px;
+.section-mentions1 {
+    font-size: 26px;
+    line-height: 1.6;
     text-align: center;
     background-color: #fff;
     border-radius: 40px;
-    width: 400px;
-    padding-top: 30px;
-    margin-left: 500px;
-    position: relative;
-    height: 60px;
-    bottom: 10px;
+    width: 30%;
+    padding: 30px;
+    margin: 20px auto; 
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
 }

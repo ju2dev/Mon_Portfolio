@@ -1,5 +1,6 @@
 import React from 'react';
 import './projects.css';
+
 import GitHub from '../../assets/img/github.svg';
 import KASA from '../../assets/img/KASA.png';
 import OMF from '../../assets/img/OHMYFOOD.png';
@@ -124,10 +125,10 @@ const Projects = () => {
                 <img src={Debug} alt="Projet 5" />
               </div>
               <div className="project-back">
-                <p className='project-texte'><strong>Optimisation du site d'une agence événementielle, quelques bugs entravent le bon usage par les visiteurs. 724events fait donc appel à vous pour finaliser le travail.</strong></p>
-                <img src={SASS} alt="SASS" className="competence-icon1" />
-                <img src={REACT} alt="React" className="competence-icon2" />
-                <img src={JS} alt="JavaScript" className="competence-icon1" />
+                <p className='project-texte4'><strong>Optimisation du site d'une agence événementielle, quelques bugs entravent le bon usage par les visiteurs. 724events fait donc appel à vous pour finaliser le travail.</strong></p>
+                <img src={SASS} alt="SASS" className="competence-icon10" />
+                <img src={REACT} alt="React" className="competence-icon20" />
+                <img src={JS} alt="JavaScript" className="competence-icon10" />
               </div>
             </div>
           </a>
@@ -170,7 +171,7 @@ const Projects = () => {
                 <img src={Argent} alt="Projet 7" />
               </div>
               <div className="project-back">
-                <p className='project-texte1'><strong>Intégrer Argent Bank comme développeuse front-end pour gérer l’accès, la modification du pseudo, et la consultation sécurisée des profils utilisateurs</strong></p>
+                <p className='project-texte3'><strong>Intégrer Argent Bank comme développeuse front-end pour gérer l’accès, la modification du pseudo, et la consultation sécurisée des profils utilisateurs</strong></p>
                 <img src={REACT} alt="React" className="competence-icon3" />
                 <img src={CSS} alt="CSS" className="competence-icon1" />
               </div>
@@ -192,7 +193,7 @@ const Projects = () => {
                 <img src={Portfolio} alt="Projet 9" />
               </div>
               <div className="project-back">
-                <p className='project-texte1'><strong>Bienvenue sur mon portfolio !</strong></p>
+                <p className='project-texte2'><strong>Bienvenue sur mon portfolio !</strong></p>
                 <img src={REACT} alt="React" className="competence-icon3" />
                 <img src={CSS} alt="CSS" className="competence-icon1" />
               </div>
