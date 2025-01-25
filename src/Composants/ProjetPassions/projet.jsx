@@ -98,7 +98,7 @@ const Passions = () => {
 
   return (
     <>
-      <div className="container3">
+      <div className="container4">
         <p className="passion-description">
           La photographie est bien plus qu'un simple passe-temps pour moi, c'est une véritable passion qui me permet de capturer et de célébrer les moments éphémères de la vie. Chaque image raconte une histoire, émotions et détails, transformant des instants fugaces en souvenirs durables.
         </p>
