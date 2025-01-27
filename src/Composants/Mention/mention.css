@@ -1,41 +1,14 @@
 
 .container {
     background-color: #fff;
-border-radius: 20px;
-padding: 30px;
-width: 90%;
-height: 100%;
-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
-margin-left: 40px;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-/* fleurs */
-.corner-flower {
-    position: absolute;
-    width: 70px; 
-    height: 70px;
-    animation: rotate 10s linear infinite;
-}
-
-.flower-top-right {
-    top: -25px;
-    right: -25px;
-}
-
-.flower-bottom-left {
-    top: -25px;
-    left: -25px;
-}
-
-/* anim fleurs */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 /* Mentions */
 .section-mentions {

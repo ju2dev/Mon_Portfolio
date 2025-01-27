@@ -3,40 +3,11 @@
     background-color: #fff;
     border-radius: 20px;
     padding: 30px;
-    width: 90%;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
     margin-left: 40px;
+    margin-right: 40px;
 }
 
-/* fleurs */
-.corner-flower {
-    position: absolute;
-    width: 70px; 
-    height: 70px;
-    animation: rotate 10s linear infinite;
-}
-
-.flower-top-right {
-    top: -25px;
-    right: -25px;
-}
-
-.flower-bottom-left {
-    top: -25px;
-    left: -25px;
-}
-
-/* anim fleurs */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Mentions */
 .section-mentions1 {
     font-size: 26px;
     line-height: 1.6;
@@ -45,6 +16,12 @@
     border-radius: 40px;
     width: 30%;
     padding: 30px;
-    margin: 20px auto; 
+    margin: 20px auto; /* Centre le texte */
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 580px) {
+    .section-mentions1 {
+       width: 50%;
+    }
+  }
