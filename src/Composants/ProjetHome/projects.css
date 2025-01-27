@@ -1,203 +1,195 @@
 .projects-section-container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 90px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 90px;
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 20px; 
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 20px; 
+  justify-content: center;
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    transition: transform 0.3s ease-in-out;
-    height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+  height: 300px;
 }
 
 .project-card:hover {
-    transform: translateY(-10px); /* Léger effet de survol */
+  transform: translateY(-10px);
 }
 
 .project-inner {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s ease-in-out;
-    bottom: 50px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  bottom: 50px;
 }
 
 .project-card:hover .project-inner {
-    transform: rotateY(180deg); /* Animation lors du survol */
+  transform: rotateY(180deg);
 }
 
 .project-front, .project-back {
-    position: absolute;
-    height: 100%;
-    backface-visibility: hidden; 
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .project-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+/* Style pour le dos de la carte */
 .project-back {
-    background-color: white;
-    transform: rotateY(180deg);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    border: none;
-    padding: 10px;
+  background-color: white;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  padding: 20px;
+  box-sizing: border-box;
 }
+
 
 .project-info {
-    text-align: center;
-    border-radius: 0 0 20px 20px;
-    position: relative;
-    background-color: #f4f4f4;
-    height: 50px;
-    z-index: 100;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  background-color: #f4f4f4;
+  height: 50px;
+  z-index: 100;
 }
 
-
-
-.github-icon1, .github-icon2, .github-icon3, .github-icon4, .github-icon5, .github-icon6, .github-icon7, .github-icon8, .github-icon9 {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 10px;
-    right: 8px;
+.project-info1 {
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  background-color: #f4f4f4;
+  height: 70px;
+  z-index: 100;
 }
 
-.texte {
-    font-size: 15px;
-    color: #333;
-    font-weight: bold;
-    text-align: center;
+.github-icon1, .github-icon2, .github-icon3, .github-icon4, 
+.github-icon5, .github-icon6, .github-icon7, .github-icon8, .github-icon9 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  right: 8px;
 }
 
-.project-info span {
-    text-decoration: underline;
-    text-decoration-thickness: 2px; 
-  }
-
-  .project-info1 {
-    text-align: center;
-    border-radius: 0 0 20px 20px;
-    position: relative;
-    background-color: #f4f4f4;
-    height: 70px;
-    z-index: 100;
+.texte, .texte-p {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
 }
 
-.project-info1 span {
-    text-decoration: underline;
-    text-decoration-thickness: 2px; 
-  }
+.project-info span, .project-info1 span {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; 
+}
 
-  .competence-icon1 {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 100px;
-    right: 70px;
-  }
+/* Style pour le conteneur de texte */
+.project-texte {
+  margin: 0;
+  padding-top: 50px;
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 12px;
+  text-decoration: none;
+  color: #333;
+}
 
-  .project-texte {
-    position: relative;
-    left: 150px;
-    width: 300px;
-    font-size: 15px;
-  }
+/* Style pour le conteneur d'icônes */
+.icons-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
 
-  .project-texte2 {
-    position: relative;
-    left: 55px;
-  }
+.competence-icon1,
+.competence-icon2,
+.competence-icon3,
+.competence-icon10,
+.competence-icon20 {
+  width: 50px;
+  height: 50px;
+}
 
-  .project-texte3 {
-    position: relative;
-    left: 55px;
-    margin-top: 10px;
-  }
-
-  .project-texte4 {
-    position: relative;
-    left: 150px;
-    width: 300px;
-    margin-top: -15px;
-  }
-
-  .competence-icon10 {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 80px;
-    right: 70px;
-  }
-
-  .competence-icon20 {
-    width: 50px;
-    position: relative;
-    top: 80px;
-    right: 70px;
-  }
-
-  .competence-icon2 {
-    width: 50px;
-    position: relative;
-    top: 100px;
-    right: 70px;
-  }
-
-  .competence-icon3 {
-    position: relative;
-    right: 130px;
-    top: 100px;
-    width: 50px;
-  }
+.competence-icon21 {
+  width: 70px;
+  height: 30px;
+}
 
 /* Responsive Design */
 @media screen and (max-width: 1250px) {
-  
-    .projects-section-container {
-        position: relative;
-        top: 380px;
-        margin-bottom: 500px;
-    }
+  .projects-section-container {
+      position: relative;
+      top: 380px;
+      margin-bottom: 500px;
+  }
 }
 
 @media screen and (max-width: 730px) {
-    .projects-section-container {
+  .projects-section-container {
       margin-top: 150px;
-    }
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .project-back {
+      padding: 10px;
   }
 
-  @media screen and (max-width: 438px) {
-    .projects-section-container {
-      margin-top: 350px;
-    }
+  .project-texte {
+  padding-top: 35px;
   }
+
+  .icons-container {
+      gap: 10px;
+      padding-bottom: 20px;
+  }
+
+  .competence-icon1,
+  .competence-icon2,
+  .competence-icon3 {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  .projects-section-container {
+      margin-top: 350px;
+  }
+}
   
