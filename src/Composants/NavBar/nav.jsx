@@ -87,6 +87,11 @@ const Nav = () => {
 
   const isActive = (href) => {
     if (href.startsWith('#')) {
+      // Si on est sur la page d'accueil et que c'est le lien "Accueil"
+      if (href === '#accueil' && location.pathname === '/' && !activeScrollLink) {
+        return true;
+      }
+      // On garde la logique existante pour le scroll
       return location.pathname === '/' && activeScrollLink === href.substring(1);
     }
     return location.pathname === href;
