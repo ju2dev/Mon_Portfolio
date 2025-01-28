@@ -4,7 +4,7 @@ import './description.css';
 import FleurBleu from '../../assets/img/fleur-bleu.png';
 import FleurRose from '../../assets/img/fleur-rose.png';
 import FleurJaune from '../../assets/img/fleur-jaune.png';
-import FleurFoncé from '../../assets/img/fleur-rose-foncé.png';
+import FleurFonce from '../../assets/img/fleur-fonce.png';
 import GitHub from '../../assets/img/github.svg';
 import Telechargement from '../../assets/img/telechargement.svg';
 import SASS from '../../assets/img/SASS.png';
@@ -34,7 +34,7 @@ const description = () => {
           className="corner-flower flower-top-right" 
         />
         <img 
-          src={FleurFoncé}
+          src={FleurFonce}
           alt="fleur décorative" 
           className="corner-flower flower-left" 
         />
@@ -63,7 +63,7 @@ const description = () => {
           />
           {' '}CV
         </a>
-        <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer" className="btn linkedin">
+        <a href="https://www.linkedin.com/in/justine-piergiovanni-1390b230b/" target="_blank" rel="noopener noreferrer" className="btn linkedin">
     <img 
       src={Linkedin} 
       alt="LinkedIn" 
@@ -74,7 +74,7 @@ const description = () => {
   </a>
 
   {/* Bouton Instagram */}
-  <a href="https://www.instagram.com/ton-profil" target="_blank" rel="noopener noreferrer" className="btn instagram">
+  <a href="https://www.instagram.com/matthieu75_photo?igsh=cjNjNGlyNWFsMm1v" target="_blank" rel="noopener noreferrer" className="btn instagram">
     <img 
       src={Instagram} 
       alt="Instagram" 
