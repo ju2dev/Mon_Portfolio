@@ -54,7 +54,7 @@ const description = () => {
           <img src={GitHub} alt="GitHub" width="20" height="20" />
           {' '}Github
         </a>
-        <a href="cv.pdf" download className="btn cv">
+        <a href="/Mon_Portfolio/CV2025.pdf" download className="btn cv">
           <img 
             src={Telechargement} 
             alt="Téléchargement CV" 
