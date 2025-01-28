@@ -6,7 +6,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <HashRouter basename='/'>
-    <App />
-  </HashRouter>
+<HashRouter>
+  <App />
+</HashRouter>
 );
