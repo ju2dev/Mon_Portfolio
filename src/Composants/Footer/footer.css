@@ -9,7 +9,7 @@
   padding: 20px 0;
   font-size: 14px;
   margin: 20px auto; 
-  width: 80%; 
+  width: 90%; 
 }
 
 .footer-content ul {
@@ -30,4 +30,10 @@
 
 .footer-content a:hover {
   color: #e91e63; /* Couleur au survol */
+}
+
+@media screen and (max-width: 534px) {
+  .footer {
+   
+  }
 }

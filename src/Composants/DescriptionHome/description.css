@@ -166,6 +166,7 @@ h2 {
   width: 70px;
   height: 70px;
   animation: rotate 7s linear infinite;
+  z-index: 100;
 }
 
 /* Positions des fleurs */
@@ -316,10 +317,21 @@ h2 {
   }
 }
 
-@media screen and (max-width: 438px) {
+@media screen and (max-width: 500px) {
+  .container1 {
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container1 {
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 423px) {
   .container1 {
     height: 90%;
   }
 }
-
 
