@@ -21,6 +21,16 @@ import toulon from '../../assets/img/images/toulon.jpeg';
 import fleur1 from '../../assets/img/images/fleur1.jpeg';
 import étoile from '../../assets/img/images/étoile.jpeg';
 
+import tourE from '../../assets/img/images/tourE.jpeg';
+import toulouse from '../../assets/img/images/toulouse.jpeg';
+import status from '../../assets/img/images/status.jpeg';
+import chat from '../../assets/img/images/chat.jpeg';
+import pont from '../../assets/img/images/pont.jpeg';
+import nuage from '../../assets/img/images/nuage.jpeg';
+import abeille from '../../assets/img/images/abeille.jpeg';
+import voiture from '../../assets/img/images/voiture.jpeg';
+import Louvre from '../../assets/img/images/Louvre.jpeg';
+
 import './projet.css';
 
 const Passions = () => {
@@ -29,26 +39,35 @@ const Passions = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const projectData = [
-    { imageUrl: Arbre, altText: "Projet 1", name: "Arbre" },
-    { imageUrl: tour, altText: "Projet 2", name: "Site de photographie" },
-    { imageUrl: cat, altText: "Projet 3", name: "Application To-Do" },
-    { imageUrl: sacré, altText: "Projet 4", name: "E-commerce Fleuriste" },
-    { imageUrl: grib, altText: "Projet 5", name: "Blog Voyage" },
-    { imageUrl: feu, altText: "Projet 6", name: "Portfolio Matthieu" },
-    { imageUrl: paris, altText: "Projet 7", name: "Dashboard Admin" },
-    { imageUrl: lumiere, altText: "Projet 8", name: "Site événementiel" },
-    { imageUrl: eau, altText: "Projet 9", name: "Application Budget" },
-    { imageUrl: ciel, altText: "Projet 10", name: "Page de destination" },
-    { imageUrl: fleur, altText: "Projet 11", name: "Portfolio Créatif" },
-    { imageUrl: banane, altText: "Projet 12", name: "Application Santé" },
-    { imageUrl: cat1, altText: "Projet 13", name: "Arbre" },
-    { imageUrl: arbres, altText: "Projet 14", name: "Site de photographie" },
-    { imageUrl: arc, altText: "Projet 15", name: "Application To-Do" },
-    { imageUrl: dragon, altText: "Projet 16", name: "E-commerce Fleuriste" },
-    { imageUrl: bouteille, altText: "Projet 17", name: "Blog Voyage" },
-    { imageUrl: toulon, altText: "Projet 18", name: "Portfolio Matthieu" },
-    { imageUrl: fleur1, altText: "Projet 19", name: "Dashboard Admin" },
-    { imageUrl: étoile, altText: "Projet 20", name: "Site événementiel" },
+    { imageUrl: Arbre, altText: "Projet 1", name: "Un arbre dans un parc" },
+    { imageUrl: tour, altText: "Projet 2", name: "Tour Eiffel" },
+    { imageUrl: cat, altText: "Projet 3", name: "Cathédrale d'Albi" },
+    { imageUrl: sacré, altText: "Projet 4", name: "Sacré Coeur" },
+    { imageUrl: grib, altText: "Projet 5", name: "Mon jolie chaton" },
+    { imageUrl: feu, altText: "Projet 6", name: "Feu d'artifice - 14 Juillet 2023" },
+    { imageUrl: paris, altText: "Projet 7", name: "Café Paris" },
+    { imageUrl: lumiere, altText: "Projet 8", name: "Des petites lumières" },
+    { imageUrl: eau, altText: "Projet 9", name: "Sur une île" },
+    { imageUrl: ciel, altText: "Projet 10", name: "Jolie ciel" },
+    { imageUrl: fleur, altText: "Projet 11", name: "Fleur orange" },
+    { imageUrl: banane, altText: "Projet 12", name: "Bananier" },
+    { imageUrl: cat1, altText: "Projet 13", name: "Cathédrale d'Albi" },
+    { imageUrl: arbres, altText: "Projet 14", name: "Arbres dans un parc" },
+    { imageUrl: arc, altText: "Projet 15", name: "Arc de triomphe" },
+    { imageUrl: dragon, altText: "Projet 16", name: "Dragon lumière" },
+    { imageUrl: bouteille, altText: "Projet 17", name: "Bouteille dans un magasin" },
+    { imageUrl: toulon, altText: "Projet 18", name: "Port de Toulon" },
+    { imageUrl: fleur1, altText: "Projet 19", name: "Fleur" },
+    { imageUrl: étoile, altText: "Projet 20", name: "Ma magnifique écaille de tortue" },
+    { imageUrl: tourE, altText: "Projet 21", name: "Tour Eiffel entre les feuilles" },
+    { imageUrl: toulouse, altText: "Projet 22", name: "Mairie de Toulouse" },
+    { imageUrl: status, altText: "Projet 23", name: "Atatus d'Albi" },
+    { imageUrl: chat, altText: "Projet 24", name: "Siamois" },
+    { imageUrl: pont, altText: "Projet 25", name: "Pont " },
+    { imageUrl: nuage, altText: "Projet 26", name: "Nuage" },
+    { imageUrl: abeille, altText: "Projet 27", name: "Abeille sur une fleur" },
+    { imageUrl: voiture, altText: "Projet 28", name: "Ferrari Jaune" },
+    { imageUrl: Louvre, altText: "Projet 29", name: "Louvre" },
   ];
 
   const openModal = (image, index) => {

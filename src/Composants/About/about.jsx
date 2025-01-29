@@ -1,23 +1,9 @@
 import React from 'react';
 import './about.css';
 
-import FleurBleu from '../../assets/img/fleur-bleu.png';
-import FleurRose from '../../assets/img/fleur-rose.png';
-
 const About = () => {
   return (
     <div className="container2">
-      <img 
-        src={FleurBleu} 
-        alt="fleur décorative" 
-        className="corner-flower flower-top-left" 
-      />
-      <img 
-        src={FleurRose}
-        alt="fleur décorative" 
-        className="corner-flower flower-bottom-right" 
-      />
-
       <div className="profile-header">
         <div>
           <h1 className='textabout'>Justine 22 ans</h1>
