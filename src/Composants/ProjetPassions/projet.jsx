@@ -61,7 +61,7 @@ const Passions = () => {
     { imageUrl: étoile, altText: "Projet 20", name: "Ma magnifique écaille de tortue" },
     { imageUrl: tourE, altText: "Projet 21", name: "Tour Eiffel entre les feuilles" },
     { imageUrl: toulouse, altText: "Projet 22", name: "Mairie de Toulouse" },
-    { imageUrl: status, altText: "Projet 23", name: "Atatus d'Albi" },
+    { imageUrl: status, altText: "Projet 23", name: "Status d'Albi" },
     { imageUrl: chat, altText: "Projet 24", name: "Siamois" },
     { imageUrl: pont, altText: "Projet 25", name: "Pont " },
     { imageUrl: nuage, altText: "Projet 26", name: "Nuage" },
