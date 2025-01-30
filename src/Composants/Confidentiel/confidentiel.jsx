@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
       <h2 className="section-mentions1">Politique de confidentialité</h2>
       <div className="container3">
 
-        <p>La présente politique de confidentialité s’applique au site Internet suivant : [Nom de ton site] (ci-après le « Site Internet »).</p>
+        <p>La présente politique de confidentialité s’applique au site Internet suivant : Mon Portfolio (ci-après le « Site Internet »).</p>
         <p>Elle a pour but d’exposer aux utilisateurs du Site Internet :</p>
 
         <ul>
@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
         <p>Les informations soumises via le formulaire de contact sur le Site Internet sont envoyées et traitées par Formspree.io, un service tiers qui nous permet de recevoir les messages. Ces données sont uniquement utilisées pour répondre à vos demandes. Pour plus d'informations sur la manière dont Formspree.io traite vos données, veuillez consulter leur politique de confidentialité : <a href="https://formspree.io/privacy" target="_blank">https://formspree.io/privacy</a>.</p>
 
         <p><strong>Article 4 : Hébergement des Données Personnelles</strong></p>
-        <p>Le Site Internet est hébergé par [Nom de l’hébergeur].</p>
+        <p>Le Site Internet est hébergé par GitHub, Inc.</p>
 
         <p><strong>Article 5 : Responsable du traitement des Données Personnelles</strong></p>
         <p>La responsable du traitement des Données Personnelles est : Piergiovanni Justine. Elle peut être contactée à l’adresse suivante : j.piergiovanni@icloud.com.</p>
