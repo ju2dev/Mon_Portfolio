@@ -184,7 +184,7 @@ const Projects = () => {
 
         {/* Projet 7 */}
         <div className="project-card">
-          <a href="https://github.com/">
+          <a href="https://github.com/ju2dev/ArgentBank_Frontend">
             <div className="project-info">
               <img src={GitHub} alt="GitHub" className="github-icon7" />
               <span className="texte">Projet 7 : ARGENTBANK</span>
@@ -210,7 +210,7 @@ const Projects = () => {
 
        {/* Projet 8 */}
 <div className="project-card">
-  <a href="https://github.com/ju2dev/Portfolio">
+  <a href="https://github.com/ju2dev/Mon_Portfolio">
     <div className="project-info">
       <img src={GitHub} alt="GitHub" className="github-icon8" />
       <span className="texte">Projet 8 : Portfolio</span>
