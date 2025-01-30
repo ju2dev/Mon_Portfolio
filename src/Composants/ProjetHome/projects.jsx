@@ -1,5 +1,5 @@
 import React from 'react';
-import './projects.css';
+import './projects.min.css';
 
 import GitHub from '../../assets/img/github.svg';
 import KASA from '../../assets/img/KASA.png';

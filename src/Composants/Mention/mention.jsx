@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'; 
-import './mention.css';
+import './mention.min.css';
 
 const MentionsLegales = () => {
 

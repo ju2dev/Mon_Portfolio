@@ -1,5 +1,5 @@
 import React from 'react';
-import './description.css';
+import './description.min.css';
 
 import FleurBleu from '../../assets/img/fleur-bleu.png';
 import FleurRose from '../../assets/img/fleur-rose.png';

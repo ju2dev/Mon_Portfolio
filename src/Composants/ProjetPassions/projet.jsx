@@ -31,7 +31,7 @@ import abeille from '../../assets/img/images/abeille.jpeg';
 import voiture from '../../assets/img/images/voiture.jpeg';
 import Louvre from '../../assets/img/images/Louvre.jpeg';
 
-import './projet.css';
+import './projet.min.css';
 
 const Passions = () => {
   const [selectedImage, setSelectedImage] = useState(null);

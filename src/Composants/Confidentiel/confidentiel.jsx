@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './confidentiel.css';
+import './confidentiel.min.css';
 
 const PrivacyPolicy = () => {
   return (

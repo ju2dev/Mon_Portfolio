@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import './contact.css';
+import './contact.min.css';
 
 const ContactForm = () => {
   const [state, handleSubmit, reset] = useForm('meoovyka');
