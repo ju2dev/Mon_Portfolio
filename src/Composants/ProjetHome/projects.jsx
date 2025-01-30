@@ -207,33 +207,6 @@ const Projects = () => {
             </div>
           </a>
         </div>
-
-       {/* Projet 8 */}
-<div className="project-card">
-  <a href="https://github.com/ju2dev/Mon_Portfolio">
-    <div className="project-info">
-      <img src={GitHub} alt="GitHub" className="github-icon8" />
-      <span className="texte">Projet 8 : Portfolio</span>
-    </div>
-    <div className="project-inner">
-      <div className="project-front">
-        <img src={Portfolio} alt="Projet 8" />
-      </div>
-      <div className="project-back">
-        <p className="project-texte">
-          <strong>
-            Création d'un portfolio pour mettre en avant les projets en utilisant React et des composants dynamiques.
-          </strong>
-        </p>
-        <div className="icons-container">
-          <img src={REACT} alt="React" className="competence-icon21" />
-          <img src={CSS} alt="CSS" className="competence-icon1" />
-          <img src={JS} alt="JavaScript" className="competence-icon1" />
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
       </div>
 
     </section>
