@@ -21,7 +21,7 @@ const About = () => {
       <div className="section">
         <div className="section-title">Formation :</div>
         <p>
-          2024 : Openclassroom : Intégrateur WEB<br />
+          2024 : Openclassrooms : Intégrateur WEB<br />
           2020/2023 : L1/L2 License Psychologie - Champollion Albi
         </p>
       </div>

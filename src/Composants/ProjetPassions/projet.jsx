@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+// Importation
 import Arbre from '../../assets/img/images/arbre.jpeg';
 import banane from '../../assets/img/images/banane.jpeg';
 import cat from '../../assets/img/images/cat.jpeg';
@@ -33,11 +34,13 @@ import Louvre from '../../assets/img/images/Louvre.jpeg';
 
 import './projet.min.css';
 
+// State pour gérer la modal et la navigation des images
 const Passions = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [isClosing, setIsClosing] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null); // Image actuel
+  const [isClosing, setIsClosing] = useState(false); // Fermeture de la modal
   const [currentIndex, setCurrentIndex] = useState(0);
 
+   // Tableau contenant images
   const projectData = [
     { imageUrl: Arbre, altText: "Projet 1", name: "Un arbre dans un parc" },
     { imageUrl: tour, altText: "Projet 2", name: "Tour Eiffel" },
@@ -70,38 +73,43 @@ const Passions = () => {
     { imageUrl: Louvre, altText: "Projet 29", name: "Louvre" },
   ];
 
+  // Fonction pour ouvrir la modal quand une image est cliquée
   const openModal = (image, index) => {
-    setSelectedImage(image);
-    setCurrentIndex(index);
+    setSelectedImage(image); // Défini
+    setCurrentIndex(index); // Mémorise
     setIsClosing(false);
   };
 
+    // Fonction pour fermer la modal
   const closeModal = () => {
-    setIsClosing(true);
+    setIsClosing(true); // Déclencher l'animation 
     setTimeout(() => {
       setSelectedImage(null);
       setIsClosing(false);
     }, 300);
   };
 
+   // Fonction pour naviguer entre les images (précédent/suivant)
   const navigateImage = (direction) => {
+    // Calculer le nouvel index en boucle (revient au début si on dépasse)
     const newIndex = (currentIndex + direction + projectData.length) % projectData.length;
     setSelectedImage(projectData[newIndex].imageUrl);
     setCurrentIndex(newIndex);
   };
 
+   // Hook useEffect pour gérer les événements clavier
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (selectedImage) {
         switch (event.key) {
           case 'Escape':
-            closeModal();
+            closeModal(); // Fermer la modal avec la touche Échap
             break;
           case 'ArrowLeft':
-            navigateImage(-1);
+            navigateImage(-1); // Image précédente avec flèche gauche
             break;
           case 'ArrowRight':
-            navigateImage(1);
+            navigateImage(1); // Image suivante avec flèche droite
             break;
           default:
             break;
@@ -109,6 +117,7 @@ const Passions = () => {
       }
     };
 
+    // Ajouter et supprimer l'écouteur d'événements
     window.addEventListener('keydown', handleKeyDown);
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
@@ -117,11 +126,13 @@ const Passions = () => {
 
   return (
     <>
+     {/* Section description de la passion */}
       <div className="container4">
         <p className="passion-description">
           La photographie est bien plus qu'un simple passe-temps pour moi, c'est une véritable passion qui me permet de capturer et de célébrer les moments éphémères de la vie. Chaque image raconte une histoire, émotions et détails, transformant des instants fugaces en souvenirs durables.
         </p>
       </div>
+      {/* Grille des projets/images */}
       <div className="projects-section-container-passion">
         <section className="projects-section-passion">
           {projectData.map((project, index) => (
@@ -129,18 +140,21 @@ const Passions = () => {
               className="project-card-passion"
               key={index}
             >
+               {/* Carte de projet cliquable */}
               <div 
                 className="project-image-passion clickable" 
                 onClick={() => openModal(project.imageUrl, index)}
               >
                 <img src={project.imageUrl} alt={project.altText} />
               </div>
+              {/* Informations du projet */}
               <div className="project-info-passion">
                 <p className='texte-passion'>{project.name}</p>
               </div>
             </div>
           ))}
         </section>
+        {/* Modal pour afficher l'image en grand */}
         {selectedImage && (
           <div 
             className={`modal ${isClosing ? 'closing' : ''}`}
@@ -150,9 +164,11 @@ const Passions = () => {
               className="modal-content" 
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Bouton de fermeture */}
               <button className="close-button" onClick={closeModal}>
                 &times;
               </button>
+              {/* Bouton navigation gauche */}
               <button 
                 className="nav-button nav-left" 
                 onClick={(e) => {
@@ -162,11 +178,13 @@ const Passions = () => {
               >
                 &#10094;
               </button>
+               {/* Image en grand */}
               <img 
                 src={selectedImage} 
                 alt="Image en grand" 
                 className="modal-image" 
               />
+              {/* Bouton navigation droite */}
               <button 
                 className="nav-button nav-right" 
                 onClick={(e) => {

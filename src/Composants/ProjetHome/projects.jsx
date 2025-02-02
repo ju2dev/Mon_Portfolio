@@ -9,7 +9,6 @@ import Photo from '../../assets/img/photo.png';
 import Debug from '../../assets/img/debug.png';
 import Print from '../../assets/img/PRINT.png';
 import Argent from '../../assets/img/argentbank.png';
-import Portfolio from '../../assets/img/portfolio.png';
 import SASS from '../../assets/img/SASS.png';
 import HTML from '../../assets/img/html.png';
 import CSS from '../../assets/img/css.png';
@@ -20,6 +19,7 @@ const Projects = () => {
   return (
     <section className="projects-section-container">
       <div className="projects-grid">
+        
         {/* Projet 1 */}
         <div className="project-card">
           <a href="https://github.com/ju2dev/Kasa">

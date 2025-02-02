@@ -94,7 +94,7 @@ const description = () => {
           <p className='obj'>Mon objectif est de proposer des solutions sur mesure, optimisées pour la performance et l'expérience utilisateur.</p>
            
           <div className="competences">
-            <p>Formé par Openclassroom, j'ai des compétences en :</p>
+            <p>Formé par Openclassrooms, j'ai des compétences en :</p>
             <div className="competence-icons">
               <img src={SASS} alt="SASS" className="competence-icon" />
               <img src={REACT} alt="React" className="competence-icon" />

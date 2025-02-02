@@ -3,10 +3,13 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import './nav.min.css';
 
 const Nav = () => {
+  // State pour suivre le lien actif lors du scroll sur la page d'accueil
   const [activeScrollLink, setActiveScrollLink] = useState('');
+  // Hooks de navigation et de localisation 
   const navigate = useNavigate();
   const location = useLocation();
 
+   // Effet pour scroller en haut de page 
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -14,6 +17,7 @@ const Nav = () => {
     });
   }, [location.pathname]);
 
+    // Effet pour gérer la détection du lien actif lors du scroll
   useEffect(() => {
     if (location.pathname === '/') {
       const navbar = document.querySelector('.navbar');
@@ -38,6 +42,7 @@ const Nav = () => {
         });
       };
 
+        // Ajoute et supprime l'écouteur d'événements de scroll
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
     } else {
@@ -45,6 +50,7 @@ const Nav = () => {
     }
   }, [location.pathname]);
 
+    // Gère les clics sur les liens de navigation
   const handleClick = (e, href) => {
     e.preventDefault();
     
@@ -65,6 +71,7 @@ const Nav = () => {
     }
   };
 
+   // Fonction pour scroller vers une section spécifique
   const scrollToSection = (sectionId) => {
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
@@ -78,6 +85,7 @@ const Nav = () => {
     }
   };
 
+  // Définition des éléments de navigation
   const navItems = [
     { href: '#accueil', text: 'Accueil', id: 'accueil' },
     { href: '/propos', text: 'A propos', id: 'propos' },
@@ -85,9 +93,10 @@ const Nav = () => {
     { href: '/contact', text: 'Contact', id: 'contact' }
   ];
 
+  // Détermine si un lien de navigation est actif
   const isActive = (href) => {
     if (href.startsWith('#')) {
-      // Si on est sur la page d'accueil et que c'est le lien "Accueil"
+      // Cas spécial pour le lien Accueil sur la page d'accueil
       if (href === '#accueil' && location.pathname === '/' && !activeScrollLink) {
         return true;
       }

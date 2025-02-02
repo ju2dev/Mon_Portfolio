@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import './contact.min.css';
 
 const ContactForm = () => {
-  const [state, handleSubmit, reset] = useForm('meoovyka');
+  const [state, handleSubmit, reset] = useForm('meoovyka'); // UseForm permet de gerer état formulaire et envoi 
   const [modalVisible, setModalVisible] = useState(false);
   
   // Gestion des valeurs du formulaire
